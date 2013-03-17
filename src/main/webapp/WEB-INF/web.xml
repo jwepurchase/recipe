@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>app</servlet-name>
+		<servlet-class>com.johnpurchase.recipe.control.AppControlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>app</servlet-name>
+		<url-pattern>/recipe</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>com.johnpurchase.recipe.RecipeTilesListener</listener-class>
+	</listener>
+	<welcome-file-list>
+		<welcome-file>./welcome.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
